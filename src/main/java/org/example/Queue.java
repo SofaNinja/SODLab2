@@ -15,7 +15,7 @@ public class Queue {
 
     public void printQueue() {
         if (isEmpty()) {
-            System.out.println("Queue is empty, add some numbers");
+            System.out.println("Черга пуста");
         } else {
             for (int i = start; i <= end; i++) {
                 System.out.print(arr[i] + " ");
@@ -26,7 +26,7 @@ public class Queue {
 
     public void addNumber(int number) {
         if (isFull()) {
-            System.out.println("Queue is full!");
+            System.out.println("Черга заповнена");
         } else {
             if (isEmpty()) {
                 start = 0;
@@ -38,7 +38,7 @@ public class Queue {
 
     public int deleteNumber() {
         if (isEmpty()) {
-            System.out.println("Queue is empty!");
+            System.out.println("Черга пуста");
             return -1;
         } else {
             int temp = arr[start];
